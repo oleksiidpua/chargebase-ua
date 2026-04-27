@@ -1,0 +1,153 @@
+{
+  "Meta": {
+    "title": "ChargeBase UA — Portable Power Station 2400W | LiFePO4",
+    "description": "Energy independence for your home. 2400W portable power station with LiFePO4 battery. 3500+ cycles. Direct delivery from China to Nova Poshta in 20–30 days. No customs fees.",
+    "ogTitle": "ChargeBase UA — Energy Independence for Your Home",
+    "ogDescription": "2400W portable power station. Powers fridge for 15 hours, boiler for 10 hours, charges laptop 25 times."
+  },
+  "Header": {
+    "brand": "ChargeBase UA",
+    "specs": "Specs",
+    "powers": "What it powers",
+    "delivery": "Delivery",
+    "faq": "FAQ",
+    "consultation": "Consultation",
+    "status": "Direct from factory — no customs fees"
+  },
+  "Hero": {
+    "badge": "Direct from China",
+    "title": "Energy independence for your home",
+    "titleAccent": "2400W Portable Power Station",
+    "subtitle": "LiFePO4 battery, 3500+ cycles. Direct delivery from China to your Nova Poshta branch in 20–30 days.",
+    "priceLabel": "Discounted price",
+    "oldPrice": "₴37,383",
+    "newPrice": "₴22,950",
+    "discount": "−39%",
+    "cta": "Order with discount",
+    "ctaSecondary": "Learn more",
+    "trust1": "3500+ cycles",
+    "trust2": "Money-back guarantee",
+    "trust3": "No customs fees"
+  },
+  "Powers": {
+    "sectionTitle": "What it powers",
+    "sectionSubtitle": "Select appliances and see how many hours the station will run on a single charge",
+    "totalLabel": "Total runtime",
+    "hours": "h",
+    "minutes": "min",
+    "noDevices": "Select appliances above",
+    "items": {
+      "fridge": { "name": "Refrigerator", "duration": "15–20 hours" },
+      "laptop": { "name": "Laptop", "duration": "25–30 charges" },
+      "coffee": { "name": "Coffee machine", "duration": "50–60 cups" },
+      "boiler": { "name": "Heating boiler", "duration": "10–12 hours" },
+      "tv": { "name": "TV", "duration": "20–25 hours" },
+      "router": { "name": "Wi-Fi router", "duration": "60+ hours" },
+      "lamp": { "name": "LED lamp", "duration": "100+ hours" },
+      "phone": { "name": "Smartphone", "duration": "200+ charges" }
+    }
+  },
+  "Tech": {
+    "sectionTitle": "Technical advantages",
+    "sectionSubtitle": "Why LiFePO4 is the best choice for home",
+    "feature1": {
+      "title": "LiFePO4 cells",
+      "description": "Don't burn, don't explode. Safe even when damaged. Last 10+ years with daily use."
+    },
+    "feature2": {
+      "title": "Pure sine wave",
+      "description": "Critical for heating boilers, medical equipment and sensitive electronics. Won't damage expensive devices."
+    },
+    "feature3": {
+      "title": "Fast charging",
+      "description": "From 0 to 80% in 1.5 hours from a regular outlet. Supports solar panel charging."
+    }
+  },
+  "How": {
+    "sectionTitle": "How we work",
+    "sectionSubtitle": "Transparent process with no hidden fees",
+    "step1": {
+      "title": "Order",
+      "description": "You place an order on the website and pay in hryvnia."
+    },
+    "step2": {
+      "title": "Logistics",
+      "description": "The product ships via international mail. Tracking number provided within 3–5 days."
+    },
+    "step3": {
+      "title": "Delivery",
+      "description": "Pick up your parcel at a Nova Poshta branch. No customs fees!"
+    }
+  },
+  "Trust": {
+    "sectionTitle": "Warranty and support",
+    "sectionSubtitle": "We stand behind our quality",
+    "guarantee": {
+      "title": "Money-back guarantee",
+      "description": "If the product arrives damaged — full refund or replacement."
+    },
+    "support": {
+      "title": "Technical support",
+      "description": "We'll help with setup and answer all questions on Telegram or Viber."
+    },
+    "reviews": {
+      "title": "Real reviews",
+      "description": "Over 8,800 sales and thousands of positive reviews on AliExpress."
+    },
+    "stats": {
+      "sales": "Sales",
+      "rating": "Rating",
+      "warranty": "Warranty",
+      "warrantyValue": "12 months"
+    }
+  },
+  "Order": {
+    "sectionTitle": "Place your order",
+    "sectionSubtitle": "Fill out the form — we'll contact you within 30 minutes",
+    "fields": {
+      "name": "Full name",
+      "namePlaceholder": "John Smith",
+      "phone": "Phone",
+      "phonePlaceholder": "+380 99 123 45 67",
+      "email": "Email (optional)",
+      "emailPlaceholder": "your@email.com",
+      "city": "City",
+      "cityPlaceholder": "Kyiv",
+      "branch": "Nova Poshta branch",
+      "branchPlaceholder": "No. 5 or postal code",
+      "comment": "Comment",
+      "commentPlaceholder": "Additional notes"
+    },
+    "errors": {
+      "nameRequired": "Please enter your full name",
+      "phoneRequired": "Please enter your phone number",
+      "phoneInvalid": "Invalid phone format",
+      "cityRequired": "Please enter your city",
+      "branchRequired": "Please enter the branch",
+      "emailInvalid": "Invalid email format"
+    },
+    "submit": "Order for ₴22,950",
+    "submitting": "Submitting...",
+    "successTitle": "Thank you! Order received",
+    "successMessage": "We'll contact you within 30 minutes to confirm your order.",
+    "submitAnother": "Place another order",
+    "agreement": "By clicking the button, you agree to the personal data processing terms"
+  },
+  "Footer": {
+    "tagline": "Energy independence for your home",
+    "contacts": "Contacts",
+    "phone": "+380 XX XXX XX XX",
+    "email": "info@chargebase.ua",
+    "telegram": "Telegram",
+    "viber": "Viber",
+    "navigation": "Navigation",
+    "copyright": "© 2026 ChargeBase UA. All rights reserved.",
+    "payment": "Payment methods"
+  },
+  "LangSwitcher": {
+    "label": "Language",
+    "uk": "Українська",
+    "ru": "Русский",
+    "en": "English"
+  }
+}
