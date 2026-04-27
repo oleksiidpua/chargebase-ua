@@ -7,17 +7,17 @@ import { X, Play } from 'lucide-react';
 import { MotionSection, MotionItem } from './MotionSection';
 
 type MediaItem =
-  | { type: 'image'; src: string }
-  | { type: 'video'; src: string; poster: string };
+  | { type: 'image'; src: string; alt: string }
+  | { type: 'video'; src: string; poster: string; alt: string };
 
 const items: MediaItem[] = [
-  { type: 'image', src: '/product-1.avif' },
-  { type: 'image', src: '/product-2.avif' },
-  { type: 'image', src: '/product-3.avif' },
-  { type: 'image', src: '/product-4.avif' },
-  { type: 'image', src: '/product-5.avif' },
-  { type: 'image', src: '/product-6.avif' },
-  { type: 'video', src: '/product-video.mp4', poster: '/product-1.avif' },
+  { type: 'image', src: '/product-1.avif', alt: 'Зарядна станція ChargeBase 2400W LiFePO4 — вигляд спереду' },
+  { type: 'image', src: '/product-2.avif', alt: 'Портативна електростанція 2400W для дому — загальний вигляд' },
+  { type: 'image', src: '/product-3.avif', alt: 'Зарядна станція ChargeBase 2048 Вт·год — бічний вигляд' },
+  { type: 'image', src: '/product-4.avif', alt: 'ChargeBase 2400W — роз\'єми та вихідні порти' },
+  { type: 'image', src: '/product-5.avif', alt: 'Зарядна станція ChargeBase — дисплей та керування' },
+  { type: 'image', src: '/product-6.avif', alt: 'Портативна станція 2400W у побутовому використанні' },
+  { type: 'video', src: '/product-video.mp4', poster: '/product-1.avif', alt: 'Відеоогляд зарядної станції ChargeBase 2400W LiFePO4' },
 ];
 
 export function Gallery() {
@@ -44,7 +44,7 @@ export function Gallery() {
                 >
                   <Image
                     src={item.type === 'video' ? item.poster : item.src}
-                    alt={`ChargeBase 2400W ${idx + 1}`}
+                    alt={item.alt}
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                     className="object-cover transition duration-500 group-hover:scale-110"
@@ -94,7 +94,7 @@ export function Gallery() {
               {active.type === 'image' ? (
                 <Image
                   src={active.src}
-                  alt="ChargeBase 2400W"
+                  alt={active.alt}
                   fill
                   sizes="100vw"
                   className="object-contain"

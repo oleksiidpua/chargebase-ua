@@ -8,6 +8,7 @@ import { HowItWorks } from '@/components/HowItWorks';
 import { Trust } from '@/components/Trust';
 import { OrderForm } from '@/components/OrderForm';
 import { Footer } from '@/components/Footer';
+import { SeoText } from '@/components/SeoText';
 
 export default async function HomePage({
   params,
@@ -28,6 +29,7 @@ export default async function HomePage({
         <HowItWorks />
         <Trust />
         <OrderForm />
+        <SeoText />
       </main>
       <Footer />
     </>

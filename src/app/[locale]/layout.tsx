@@ -65,8 +65,32 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
+  const jsonLd = {
+    '@context': 'https://schema.org/',
+    '@type': 'Product',
+    name: 'Портативна зарядна станція 2400W LiFePO4',
+    image: 'https://chargebase-ua.vercel.app/hero.avif',
+    description:
+      'Потужна зарядна станція для дому з акумулятором LiFePO4 та чистою синусоїдою.',
+    brand: { '@type': 'Brand', name: 'ChargeBase' },
+    offers: {
+      '@type': 'Offer',
+      url: 'https://chargebase-ua.vercel.app/',
+      priceCurrency: 'UAH',
+      price: '22950',
+      availability: 'https://schema.org/InStock',
+      itemCondition: 'https://schema.org/NewCondition',
+    },
+  };
+
   return (
     <html lang={locale} className={`${display.variable} ${mono.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>

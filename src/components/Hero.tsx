@@ -33,6 +33,8 @@ export function Hero() {
 
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8">
         <div className="flex flex-col justify-center">
+          <h1 className="sr-only">{t('h1Seo')}</h1>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -144,7 +146,7 @@ export function Hero() {
             <div className="relative flex h-full w-full items-center justify-center">
               <Image
                 src="/hero.avif"
-                alt="ChargeBase 2400W Power Station"
+                alt={t('imageAlt')}
                 fill
                 priority
                 sizes="(max-width: 1024px) 90vw, 500px"

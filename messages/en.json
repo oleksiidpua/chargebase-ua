@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "ChargeBase UA — Portable Power Station 2400W | LiFePO4",
-    "description": "Energy independence for your home. 2400W portable power station with LiFePO4 battery. 3500+ cycles. Direct delivery from China to Nova Poshta in 20–30 days. No customs fees.",
+    "title": "LiFePO4 Power Stations in Ukraine — Portable Power Stations 2400W | ChargeBase",
+    "description": "Reliable portable power stations for home and apartment. LiFePO4 batteries, pure sine wave and fast charging. Delivery to Ukraine with no customs fees. Ensure your energy independence!",
     "ogTitle": "ChargeBase UA — Energy Independence for Your Home",
     "ogDescription": "2400W portable power station. Powers fridge for 15 hours, boiler for 10 hours, charges laptop 25 times."
   },
@@ -27,7 +27,9 @@
     "ctaSecondary": "Learn more",
     "trust1": "3500+ cycles",
     "trust2": "Money-back guarantee",
-    "trust3": "No customs fees"
+    "trust3": "No customs fees",
+    "h1Seo": "Portable Power Stations and Energy Independence Systems",
+    "imageAlt": "ChargeBase 2400W LiFePO4 Portable Power Station for Home"
   },
   "Powers": {
     "sectionTitle": "What it powers",
@@ -143,6 +145,19 @@
     "navigation": "Navigation",
     "copyright": "© 2026 ChargeBase UA. All rights reserved.",
     "payment": "Payment methods"
+  },
+  "SeoText": {
+    "title": "Home Power Station: Reliable Energy Source in Any Conditions",
+    "intro": "With unstable power supply in Ukraine, a portable power station has become not just a gadget but a necessity. At ChargeBase we offer modern solutions for energy independence in your apartment, house or office. We work on a direct supply model, which allows you to buy a power station at the best price without overpaying middlemen.",
+    "featuresTitle": "2400W Power for Home Appliances",
+    "feature1Title": "LiFePO4 Technology",
+    "feature1": "Our stations are equipped with lithium iron phosphate batteries that withstand over 3,500 charge cycles. That is over 10 years of daily use.",
+    "feature2Title": "Pure Sine Wave",
+    "feature2": "Important for the safe operation of heating boilers, refrigerators and sensitive computer equipment.",
+    "feature3Title": "Fast Charging",
+    "feature3": "Modern controllers allow you to charge the station to 80% in just 1.5–2 hours from a regular outlet.",
+    "feature4Title": "No Customs Fees",
+    "feature4": "Under current Ukrainian law, energy equipment (batteries and inverters) is imported at zero duty and VAT rates, making the purchase maximally cost-effective."
   },
   "LangSwitcher": {
     "label": "Language",
