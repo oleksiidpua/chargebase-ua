@@ -8,7 +8,7 @@ import '../globals.css';
 
 const display = Plus_Jakarta_Sans({
   variable: '--font-display',
-  subsets: ['latin', 'cyrillic'],
+  subsets: ['latin', 'cyrillic-ext'],
   display: 'swap',
 });
 
