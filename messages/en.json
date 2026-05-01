@@ -148,16 +148,18 @@
   },
   "SeoText": {
     "title": "Home Power Station: Reliable Energy Source in Any Conditions",
-    "intro": "With unstable power supply in Ukraine, a portable power station has become not just a gadget but a necessity. At ChargeBase we offer modern solutions for energy independence in your apartment, house or office. We work on a direct supply model, which allows you to buy a power station at the best price without overpaying middlemen.",
+    "intro": "With unstable power supply in Ukraine, a portable power station (home generator, battery backup, UPS for boiler) has become a necessity for apartments, private houses, offices and country homes. ChargeBase offers a modern 2400W portable power station with a lithium iron phosphate LiFePO4 battery — reliable backup power for blackouts, emergency outages and to keep your gas heating boiler running. We work on a direct-supply model from China, which allows you to buy a power station at the best price without overpaying middlemen.",
     "featuresTitle": "2400W Power for Home Appliances",
     "feature1Title": "LiFePO4 Technology",
-    "feature1": "Our stations are equipped with lithium iron phosphate batteries that withstand over 3,500 charge cycles. That is over 10 years of daily use.",
+    "feature1": "Our stations are equipped with lithium iron phosphate batteries that withstand over 3,500 charge cycles. That is over 10 years of daily use — 5x longer than standard lithium-ion batteries.",
     "feature2Title": "Pure Sine Wave",
-    "feature2": "Important for the safe operation of heating boilers, refrigerators and sensitive computer equipment.",
+    "feature2": "Critical for the safe operation of gas boilers (Vaillant, Bosch, Baxi, Protherm), refrigerators, medical devices and sensitive computer equipment. Will not damage expensive electronics.",
     "feature3Title": "Fast Charging",
-    "feature3": "Modern controllers allow you to charge the station to 80% in just 1.5–2 hours from a regular outlet.",
+    "feature3": "Modern controllers allow you to charge the station to 80% in just 1.5–2 hours from a regular 220V outlet. Supports solar-panel charging for complete energy independence.",
     "feature4Title": "No Customs Fees",
-    "feature4": "Under current Ukrainian law, energy equipment (batteries and inverters) is imported at zero duty and VAT rates, making the purchase maximally cost-effective."
+    "feature4": "Under current Ukrainian law, energy equipment (batteries and inverters) is imported at zero duty and VAT rates, making the purchase maximally cost-effective — no customs clearance at Nova Poshta.",
+    "useCasesTitle": "Who Needs a 2400W LiFePO4 Power Station",
+    "useCases": "A universal solution for those looking for a quiet, safe alternative to a petrol generator. Suitable for owners of gas heating boilers with circulation pumps, apartment dwellers needing power for fridge, Wi-Fi router, TV and lighting during scheduled outages. Also useful as a portable inverter for camping, hiking, country houses, garages and construction sites. Compatible with solar panels and serves as an affordable alternative to EcoFlow Delta, Bluetti AC200 and Anker SOLIX."
   },
   "LangSwitcher": {
     "label": "Language",

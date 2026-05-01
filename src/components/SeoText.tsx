@@ -29,6 +29,8 @@ export function SeoText() {
             <p className="text-sm leading-relaxed text-slate-400">{t('feature4')}</p>
           </div>
         </div>
+        <h3 className="mt-8 mb-3 text-base font-semibold text-slate-300">{t('useCasesTitle')}</h3>
+        <p className="text-sm leading-relaxed text-slate-400">{t('useCases')}</p>
       </div>
     </section>
   );
