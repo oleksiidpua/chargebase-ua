@@ -6,6 +6,7 @@ import { PowersGrid } from '@/components/PowersGrid';
 import { TechFeatures } from '@/components/TechFeatures';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Trust } from '@/components/Trust';
+import { Faq } from '@/components/Faq';
 import { OrderForm } from '@/components/OrderForm';
 import { Footer } from '@/components/Footer';
 import { SeoText } from '@/components/SeoText';
@@ -28,6 +29,7 @@ export default async function HomePage({
         <TechFeatures />
         <HowItWorks />
         <Trust />
+        <Faq />
         <OrderForm />
         <SeoText />
       </main>

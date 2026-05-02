@@ -161,6 +161,40 @@
     "useCasesTitle": "Who Needs a 2400W LiFePO4 Power Station",
     "useCases": "A universal solution for those looking for a quiet, safe alternative to a petrol generator. Suitable for owners of gas heating boilers with circulation pumps, apartment dwellers needing power for fridge, Wi-Fi router, TV and lighting during scheduled outages. Also useful as a portable inverter for camping, hiking, country houses, garages and construction sites. Compatible with solar panels and serves as an affordable alternative to EcoFlow Delta, Bluetti AC200 and Anker SOLIX."
   },
+  "Faq": {
+    "sectionTitle": "Frequently Asked Questions",
+    "sectionSubtitle": "Answers to questions our customers ask most often",
+    "items": {
+      "boiler": {
+        "q": "Can I connect a gas boiler to the power station?",
+        "a": "Yes, our 2400W station with pure sine wave is compatible with all popular boilers — Vaillant, Bosch, Baxi, Protherm, Immergas. The circulation pump and boiler electronics consume around 100–150W, so a single charge will last 10–12 hours of continuous heating."
+      },
+      "fridge": {
+        "q": "How many hours can the power station run a fridge?",
+        "a": "An average household refrigerator consumes about 100–120W (factoring compressor cycles). On our 2048Wh station it will run for around 15–20 hours. Energy-efficient A++ models — up to 24 hours."
+      },
+      "delivery": {
+        "q": "How fast does the order arrive from China?",
+        "a": "Standard delivery time is 20–30 days. You receive the tracking number within 3–5 days after payment. We work with Nova Poshta — the parcel arrives at your local branch, you get an SMS and pick it up."
+      },
+      "customs": {
+        "q": "Do I need to pay customs duty on receipt?",
+        "a": "No. Under current Ukrainian law, energy equipment (battery packs and inverters) is imported at zero customs duty and VAT. There are no extra payments at Nova Poshta — the website price is final."
+      },
+      "damaged": {
+        "q": "What if the station arrives damaged?",
+        "a": "Do not accept the parcel without inspection. Unpack it right at the Nova Poshta branch in the presence of an employee and file a damage report. We guarantee a full refund or product replacement within 14 days."
+      },
+      "solar": {
+        "q": "Can I charge the station from solar panels?",
+        "a": "Yes, the station has an MPPT controller and supports charging from solar panels up to 500W. This lets you fully charge it in 4–6 hours of clear weather — complete energy independence without a wall outlet."
+      },
+      "warranty": {
+        "q": "What is the warranty period for the power station?",
+        "a": "The official manufacturer warranty is 12 months. The LiFePO4 battery is rated for over 3,500 charge cycles — 10+ years of daily use while retaining 80% of original capacity."
+      }
+    }
+  },
   "LangSwitcher": {
     "label": "Language",
     "uk": "Українська",

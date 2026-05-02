@@ -21,7 +21,7 @@ export function Header() {
     { href: '#tech', label: t('specs') },
     { href: '#powers', label: t('powers') },
     { href: '#how', label: t('delivery') },
-    { href: '#trust', label: t('faq') },
+    { href: '#faq', label: t('faq') },
   ];
 
   return (

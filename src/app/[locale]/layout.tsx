@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -28,6 +28,11 @@ const mono = JetBrains_Mono({
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+export const viewport: Viewport = {
+  themeColor: '#020617',
+  colorScheme: 'dark',
+};
 
 export async function generateMetadata({
   params,
@@ -88,17 +93,24 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
-  const jsonLd = {
+  const tHow = await getTranslations({ locale, namespace: 'How' });
+  const tFaq = await getTranslations({ locale, namespace: 'Faq' });
+  const tHero = await getTranslations({ locale, namespace: 'Hero' });
+  const tMeta = await getTranslations({ locale, namespace: 'Meta' });
+
+  const canonical = `${SITE_URL}${pathFor(locale)}`;
+  const inLanguage = locale === 'uk' ? 'uk-UA' : locale === 'ru' ? 'ru-RU' : 'en-US';
+
+  const productSchema = {
     '@context': 'https://schema.org/',
     '@type': 'Product',
-    name: 'Портативна зарядна станція 2400W LiFePO4',
+    name: tHero('imageAlt'),
     image: `${SITE_URL}/og-image.jpg`,
-    description:
-      'Потужна зарядна станція для дому з акумулятором LiFePO4 та чистою синусоїдою.',
+    description: tMeta('description'),
     brand: { '@type': 'Brand', name: 'ChargeBase' },
     offers: {
       '@type': 'Offer',
-      url: `${SITE_URL}/`,
+      url: canonical,
       priceCurrency: 'UAH',
       price: '22950',
       availability: 'https://schema.org/InStock',
@@ -106,15 +118,84 @@ export default async function LocaleLayout({
     },
   };
 
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'ChargeBase UA',
+    alternateName: 'ChargeBase',
+    url: SITE_URL,
+    logo: `${SITE_URL}/og-image.jpg`,
+    description: tMeta('description'),
+    areaServed: { '@type': 'Country', name: 'Ukraine' },
+  };
+
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'ChargeBase UA',
+    url: SITE_URL,
+    inLanguage,
+  };
+
+  const faqIds = ['boiler', 'fridge', 'delivery', 'customs', 'damaged', 'solar', 'warranty'] as const;
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqIds.map((id) => ({
+      '@type': 'Question',
+      name: tFaq(`items.${id}.q`),
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: tFaq(`items.${id}.a`),
+      },
+    })),
+  };
+
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: tHow('sectionTitle'),
+    description: tHow('sectionSubtitle'),
+    step: ['step1', 'step2', 'step3'].map((id, idx) => ({
+      '@type': 'HowToStep',
+      position: idx + 1,
+      name: tHow(`${id}.title`),
+      text: tHow(`${id}.description`),
+    })),
+  };
+
+  const videoSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: tHero('imageAlt'),
+    description: tMeta('ogDescription'),
+    thumbnailUrl: `${SITE_URL}/product-1.avif`,
+    uploadDate: '2026-04-01',
+    contentUrl: `${SITE_URL}/product-video.mp4`,
+    inLanguage,
+  };
+
+  const allSchemas = [
+    productSchema,
+    organizationSchema,
+    websiteSchema,
+    faqSchema,
+    howToSchema,
+    videoSchema,
+  ];
+
   const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
   return (
     <html lang={locale} className={`${display.variable} ${mono.variable}`}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        {allSchemas.map((schema, i) => (
+          <script
+            key={i}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        ))}
       </head>
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
