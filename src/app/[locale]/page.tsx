@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import { setRequestLocale } from 'next-intl/server';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
@@ -6,10 +7,11 @@ import { PowersGrid } from '@/components/PowersGrid';
 import { TechFeatures } from '@/components/TechFeatures';
 import { HowItWorks } from '@/components/HowItWorks';
 import { Trust } from '@/components/Trust';
-import { Faq } from '@/components/Faq';
-import { OrderForm } from '@/components/OrderForm';
 import { Footer } from '@/components/Footer';
 import { SeoText } from '@/components/SeoText';
+
+const Faq = dynamic(() => import('@/components/Faq').then((m) => m.Faq));
+const OrderForm = dynamic(() => import('@/components/OrderForm').then((m) => m.OrderForm));
 
 export default async function HomePage({
   params,

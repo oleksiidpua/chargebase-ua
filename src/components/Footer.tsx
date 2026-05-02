@@ -86,8 +86,8 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-6 sm:flex-row">
-          <p className="text-xs text-slate-500">{t('copyright')}</p>
-          <div className="flex items-center gap-3 text-xs text-slate-500">
+          <p className="text-xs text-slate-400">{t('copyright')}</p>
+          <div className="flex items-center gap-3 text-xs text-slate-400">
             <span>{t('payment')}:</span>
             <span className="rounded bg-white/5 px-2 py-1">Monobank</span>
             <span className="rounded bg-white/5 px-2 py-1">LiqPay</span>

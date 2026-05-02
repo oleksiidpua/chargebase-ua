@@ -126,7 +126,7 @@ export function PowersGrid() {
               </div>
               <div className="mt-2 text-5xl font-bold tabular-nums text-white sm:text-6xl">
                 {selected.size === 0 ? (
-                  <span className="text-2xl text-slate-500">
+                  <span className="text-2xl text-slate-400">
                     {t('noDevices')}
                   </span>
                 ) : (
