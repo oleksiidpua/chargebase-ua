@@ -3,10 +3,12 @@
 import { useTranslations } from 'next-intl';
 import { Zap, Menu, X, MessageCircle } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { LangSwitcher } from './LangSwitcher';
 
 export function Header() {
   const t = useTranslations('Header');
+  const tBlog = useTranslations('Blog');
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -18,10 +20,11 @@ export function Header() {
   }, []);
 
   const links = [
-    { href: '#tech', label: t('specs') },
-    { href: '#powers', label: t('powers') },
-    { href: '#how', label: t('delivery') },
-    { href: '#faq', label: t('faq') },
+    { href: '/#tech', label: t('specs') },
+    { href: '/#powers', label: t('powers') },
+    { href: '/#how', label: t('delivery') },
+    { href: '/#faq', label: t('faq') },
+    { href: '/blog', label: tBlog('navLink') },
   ];
 
   return (
@@ -38,14 +41,14 @@ export function Header() {
         }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <a href="#top" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-emerald-400 to-emerald-600 shadow-lg shadow-emerald-500/30">
               <Zap size={20} className="text-slate-950" strokeWidth={2.5} />
             </span>
             <span className="text-lg font-bold tracking-tight">
               {t('brand')}
             </span>
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-8 lg:flex">
             {links.map((link) => (

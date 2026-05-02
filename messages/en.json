@@ -161,6 +161,16 @@
     "useCasesTitle": "Who Needs a 2400W LiFePO4 Power Station",
     "useCases": "A universal solution for those looking for a quiet, safe alternative to a petrol generator. Suitable for owners of gas heating boilers with circulation pumps, apartment dwellers needing power for fridge, Wi-Fi router, TV and lighting during scheduled outages. Also useful as a portable inverter for camping, hiking, country houses, garages and construction sites. Compatible with solar panels and serves as an affordable alternative to EcoFlow Delta, Bluetti AC200 and Anker SOLIX."
   },
+  "Blog": {
+    "navLink": "Blog",
+    "listTitle": "Energy Independence Blog",
+    "listDescription": "Guides, tips and comparisons for everyone choosing or already using a portable power station",
+    "minutesRead": "min read",
+    "backToList": "All articles",
+    "ctaTitle": "Ready to choose yours?",
+    "ctaSubtitle": "ChargeBase 2400W LiFePO4 — our pick for Ukrainian homes",
+    "ctaButton": "View product"
+  },
   "Faq": {
     "sectionTitle": "Frequently Asked Questions",
     "sectionSubtitle": "Answers to questions our customers ask most often",
