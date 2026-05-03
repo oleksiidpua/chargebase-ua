@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useForm, type UseFormRegisterReturn } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -19,7 +19,9 @@ type FormData = {
 
 export function OrderForm() {
   const t = useTranslations('Order');
+  const locale = useLocale();
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const schema = z.object({
     name: z.string().min(2, t('errors.nameRequired')),
@@ -47,10 +49,22 @@ export function OrderForm() {
   });
 
   const onSubmit = async (data: FormData) => {
-    await new Promise((res) => setTimeout(res, 800));
-    console.log('Order submitted:', data);
-    setSubmitted(true);
-    reset();
+    setSubmitError(null);
+    try {
+      const res = await fetch('/api/orders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...data, locale }),
+      });
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || 'Request failed');
+      }
+      setSubmitted(true);
+      reset();
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : 'Unknown error');
+    }
   };
 
   return (
@@ -132,6 +146,13 @@ export function OrderForm() {
                   className="w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 transition focus:border-emerald-500/50 focus:bg-white/7 focus:outline-none"
                 />
               </div>
+
+              {submitError && (
+                <p className="flex items-center gap-1.5 rounded-xl border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-300 sm:col-span-2">
+                  <AlertCircle size={16} />
+                  {submitError}
+                </p>
+              )}
 
               <button
                 type="submit"
