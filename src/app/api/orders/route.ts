@@ -35,24 +35,20 @@ export async function POST(request: Request) {
   const data = parsed.data;
   const supabase = await createClient();
 
-  const { data: order, error } = await supabase
-    .from('orders')
-    .insert({
-      customer_name: data.name,
-      phone: data.phone,
-      email: data.email || null,
-      city: data.city,
-      np_branch: data.branch,
-      comment: data.comment || null,
-      locale: data.locale || 'uk',
-    })
-    .select('id, created_at')
-    .single();
+  const { error } = await supabase.from('orders').insert({
+    customer_name: data.name,
+    phone: data.phone,
+    email: data.email || null,
+    city: data.city,
+    np_branch: data.branch,
+    comment: data.comment || null,
+    locale: data.locale || 'uk',
+  });
 
   if (error) {
     console.error('Order insert error:', error);
     return NextResponse.json({ error: 'Failed to save order' }, { status: 500 });
   }
 
-  return NextResponse.json({ id: order.id, createdAt: order.created_at });
+  return NextResponse.json({ ok: true });
 }
