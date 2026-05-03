@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Clarity } from '@/components/Clarity';
 import { routing } from '@/i18n/routing';
-import '../globals.css';
+import '../../globals.css';
 
 const SITE_URL = 'https://chargebase-ua.vercel.app';
 
