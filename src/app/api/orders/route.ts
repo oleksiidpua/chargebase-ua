@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
-import { createClient } from '@/lib/supabase/server';
+import { createAdminClient } from '@/lib/supabase/server';
+import { sendOrderNotification } from '@/lib/telegram';
 
 const orderSchema = z.object({
   name: z.string().min(2).max(100),
@@ -33,9 +34,9 @@ export async function POST(request: Request) {
   }
 
   const data = parsed.data;
-  const supabase = await createClient();
+  const supabase = createAdminClient();
 
-  const { error } = await supabase.from('orders').insert({
+  const insertPayload = {
     customer_name: data.name,
     phone: data.phone,
     email: data.email || null,
@@ -43,11 +44,23 @@ export async function POST(request: Request) {
     np_branch: data.branch,
     comment: data.comment || null,
     locale: data.locale || 'uk',
-  });
+  };
 
-  if (error) {
+  const { data: inserted, error } = await supabase
+    .from('orders')
+    .insert(insertPayload)
+    .select('id')
+    .single();
+
+  if (error || !inserted) {
     console.error('Order insert error:', error);
     return NextResponse.json({ error: 'Failed to save order' }, { status: 500 });
+  }
+
+  try {
+    await sendOrderNotification({ id: inserted.id, ...insertPayload });
+  } catch (e) {
+    console.error('Order saved but Telegram notification failed:', e);
   }
 
   return NextResponse.json({ ok: true });

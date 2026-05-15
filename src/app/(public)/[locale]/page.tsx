@@ -12,6 +12,7 @@ import { SeoText } from '@/components/SeoText';
 
 const Faq = dynamic(() => import('@/components/Faq').then((m) => m.Faq));
 const OrderForm = dynamic(() => import('@/components/OrderForm').then((m) => m.OrderForm));
+const ContactForm = dynamic(() => import('@/components/ContactForm').then((m) => m.ContactForm));
 
 export default async function HomePage({
   params,
@@ -32,6 +33,7 @@ export default async function HomePage({
         <HowItWorks />
         <Trust />
         <Faq />
+        <ContactForm />
         <OrderForm />
         <SeoText />
       </main>

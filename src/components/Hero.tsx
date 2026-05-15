@@ -122,11 +122,11 @@ export function Hero() {
 
             <div className="absolute -left-4 top-1/4 hidden rounded-2xl border border-white/10 bg-slate-900/80 p-3 backdrop-blur sm:block">
               <div className="text-xs text-slate-300">Capacity</div>
-              <div className="text-lg font-bold text-emerald-400">2048 Wh</div>
+              <div className="text-lg font-bold text-emerald-400">2016 Wh</div>
             </div>
             <div className="absolute -right-4 top-2/3 hidden rounded-2xl border border-white/10 bg-slate-900/80 p-3 backdrop-blur sm:block">
               <div className="text-xs text-slate-300">Output</div>
-              <div className="text-lg font-bold text-amber-400">2400 W</div>
+              <div className="text-lg font-bold text-amber-400">2500 W</div>
             </div>
           </div>
         </div>

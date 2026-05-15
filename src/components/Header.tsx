@@ -8,7 +8,6 @@ import { LangSwitcher } from './LangSwitcher';
 
 export function Header() {
   const t = useTranslations('Header');
-  const tBlog = useTranslations('Blog');
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -24,7 +23,6 @@ export function Header() {
     { href: '/#powers', label: t('powers') },
     { href: '/#how', label: t('delivery') },
     { href: '/#faq', label: t('faq') },
-    { href: '/blog', label: tBlog('navLink') },
   ];
 
   return (
@@ -65,7 +63,7 @@ export function Header() {
           <div className="flex items-center gap-2 sm:gap-3">
             <LangSwitcher />
             <a
-              href="#order"
+              href="#consultation"
               className="hidden items-center gap-2 rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400 hover:shadow-lg hover:shadow-emerald-500/30 sm:flex"
             >
               <MessageCircle size={16} />
@@ -96,7 +94,7 @@ export function Header() {
                 </a>
               ))}
               <a
-                href="#order"
+                href="#consultation"
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950"
               >

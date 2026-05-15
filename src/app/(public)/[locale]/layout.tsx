@@ -68,7 +68,7 @@ export async function generateMetadata({
       url: canonical,
       locale: locale === 'uk' ? 'uk_UA' : locale === 'ru' ? 'ru_RU' : 'en_US',
       siteName: 'ChargeBase UA',
-      images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'ChargeBase UA — Портативна зарядна станція 2400W LiFePO4' }],
+      images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'ChargeBase UA — Портативна зарядна станція 2500W ALLPOWERS R2500 LiFePO4' }],
     },
     twitter: {
       card: 'summary_large_image',
@@ -113,7 +113,7 @@ export default async function LocaleLayout({
       '@type': 'Offer',
       url: canonical,
       priceCurrency: 'UAH',
-      price: '22950',
+      price: '41900',
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
     },
@@ -138,7 +138,7 @@ export default async function LocaleLayout({
     inLanguage,
   };
 
-  const faqIds = ['boiler', 'fridge', 'delivery', 'customs', 'damaged', 'solar', 'warranty'] as const;
+  const faqIds = ['boiler', 'fridge', 'ups', 'expansion', 'delivery', 'package', 'damaged', 'solar', 'warranty'] as const;
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -165,24 +165,12 @@ export default async function LocaleLayout({
     })),
   };
 
-  const videoSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'VideoObject',
-    name: tHero('imageAlt'),
-    description: tMeta('ogDescription'),
-    thumbnailUrl: `${SITE_URL}/product-1.avif`,
-    uploadDate: '2026-04-01',
-    contentUrl: `${SITE_URL}/product-video.mp4`,
-    inLanguage,
-  };
-
   const allSchemas = [
     productSchema,
     organizationSchema,
     websiteSchema,
     faqSchema,
     howToSchema,
-    videoSchema,
   ];
 
   const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;

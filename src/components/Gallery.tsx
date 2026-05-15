@@ -1,34 +1,25 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Play } from 'lucide-react';
+import { X } from 'lucide-react';
 import { MotionSection, MotionItem } from './MotionSection';
 
-type MediaItem =
-  | { type: 'image'; src: string; alt: string }
-  | { type: 'video'; src: string; poster: string; alt: string };
+type MediaItem = { src: string; alt: string };
 
 const items: MediaItem[] = [
-  { type: 'image', src: '/product-1.avif', alt: 'Зарядна станція ChargeBase 2400W LiFePO4 — вигляд спереду' },
-  { type: 'image', src: '/product-2.avif', alt: 'Портативна електростанція 2400W для дому — загальний вигляд' },
-  { type: 'image', src: '/product-3.avif', alt: 'Зарядна станція ChargeBase 2048 Вт·год — бічний вигляд' },
-  { type: 'image', src: '/product-4.avif', alt: 'ChargeBase 2400W — роз\'єми та вихідні порти' },
-  { type: 'image', src: '/product-5.avif', alt: 'Зарядна станція ChargeBase — дисплей та керування' },
-  { type: 'image', src: '/product-6.avif', alt: 'Портативна станція 2400W у побутовому використанні' },
-  { type: 'video', src: '/product-video.mp4', poster: '/product-1.avif', alt: 'Відеоогляд зарядної станції ChargeBase 2400W LiFePO4' },
+  { src: '/product-1.avif', alt: 'Зарядна станція ChargeBase ALLPOWERS R2500 2500W LiFePO4 — вигляд спереду' },
+  { src: '/product-2.avif', alt: 'Портативна електростанція 2500W для дому — загальний вигляд' },
+  { src: '/product-3.avif', alt: 'Зарядна станція ChargeBase 2016 Вт·год — бічний вигляд' },
+  { src: '/product-4.avif', alt: 'ALLPOWERS R2500 — роз\'єми, вихідні порти та дисплей' },
+  { src: '/product-5.avif', alt: 'Зарядна станція ChargeBase — панель керування' },
+  { src: '/product-6.avif', alt: 'Портативна станція 2500W у побутовому використанні' },
+  { src: '/product-7.avif', alt: 'ALLPOWERS R2500 з розширювальними батареями B1000' },
 ];
 
 export function Gallery() {
   const [active, setActive] = useState<MediaItem | null>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    if (active?.type === 'video') {
-      videoRef.current?.play().catch(() => {});
-    }
-  }, [active]);
 
   return (
     <>
@@ -43,23 +34,12 @@ export function Gallery() {
                   className="group relative block aspect-square w-full overflow-hidden rounded-2xl border border-white/10 bg-white/2 transition hover:border-emerald-500/40"
                 >
                   <Image
-                    src={item.type === 'video' ? item.poster : item.src}
+                    src={item.src}
                     alt={item.alt}
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                     className="object-cover transition duration-500 group-hover:scale-110"
                   />
-                  {item.type === 'video' && (
-                    <span className="absolute inset-0 flex items-center justify-center bg-black/40 transition group-hover:bg-black/30">
-                      <span className="flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 shadow-2xl shadow-emerald-500/50 transition group-hover:scale-110">
-                        <Play
-                          size={22}
-                          className="ml-0.5 text-slate-950"
-                          fill="currentColor"
-                        />
-                      </span>
-                    </span>
-                  )}
                 </button>
               </MotionItem>
             ))}
@@ -91,24 +71,13 @@ export function Gallery() {
               className="relative h-[80vh] w-full max-w-4xl"
               onClick={(e) => e.stopPropagation()}
             >
-              {active.type === 'image' ? (
-                <Image
-                  src={active.src}
-                  alt={active.alt}
-                  fill
-                  sizes="100vw"
-                  className="object-contain"
-                />
-              ) : (
-                <video
-                  ref={videoRef}
-                  src={active.src}
-                  poster={active.poster}
-                  controls
-                  playsInline
-                  className="h-full w-full object-contain"
-                />
-              )}
+              <Image
+                src={active.src}
+                alt={active.alt}
+                fill
+                sizes="100vw"
+                className="object-contain"
+              />
             </motion.div>
           </motion.div>
         )}

@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Zap, Mail, Phone, Send, MessageCircle } from 'lucide-react';
+import { Zap, Mail, Send, MessageCircle } from 'lucide-react';
 
 export function Footer() {
   const t = useTranslations('Footer');
@@ -63,15 +63,6 @@ export function Footer() {
               {t('contacts')}
             </h4>
             <ul className="mt-4 space-y-3">
-              <li>
-                <a
-                  href={`tel:${t('phone').replace(/\s/g, '')}`}
-                  className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-emerald-400"
-                >
-                  <Phone size={14} />
-                  {t('phone')}
-                </a>
-              </li>
               <li>
                 <a
                   href={`mailto:${t('email')}`}

@@ -1,9 +1,9 @@
 {
   "Meta": {
-    "title": "LiFePO4 Power Stations in Ukraine — Portable Power Stations 2400W | ChargeBase",
-    "description": "Reliable portable power stations for home and apartment. LiFePO4 batteries, pure sine wave and fast charging. Delivery to Ukraine with no customs fees. Ensure your energy independence!",
+    "title": "LiFePO4 Power Stations in Ukraine — Portable Power Station 2500W ALLPOWERS R2500 | ChargeBase",
+    "description": "ALLPOWERS R2500 portable power station 2500W, LiFePO4 battery 2016Wh, 15ms UPS, pure sine wave. From our Ukraine warehouse — Nova Poshta delivery in 1–2 days. Power your home backup setup!",
     "ogTitle": "ChargeBase UA — Energy Independence for Your Home",
-    "ogDescription": "2400W portable power station. Powers fridge for 15 hours, boiler for 10 hours, charges laptop 25 times."
+    "ogDescription": "ALLPOWERS R2500 portable power station 2500W. 15ms UPS, dual input up to 2000W, expandable up to 3× B1000. 1–2 day delivery from our Ukraine warehouse."
   },
   "Header": {
     "brand": "ChargeBase UA",
@@ -12,24 +12,24 @@
     "delivery": "Delivery",
     "faq": "FAQ",
     "consultation": "Consultation",
-    "status": "Direct from factory — no customs fees"
+    "status": "In stock in Ukraine — Nova Poshta delivery in 1–2 days"
   },
   "Hero": {
-    "badge": "Direct from China",
+    "badge": "From our Ukraine stock",
     "title": "Energy independence for your home",
-    "titleAccent": "2400W Portable Power Station",
-    "subtitle": "LiFePO4 battery, 3500+ cycles. Direct delivery from China to your Nova Poshta branch in 20–30 days.",
+    "titleAccent": "2500W Portable Power Station",
+    "subtitle": "ALLPOWERS R2500 — 2500W (4000W peak), 2016Wh LiFePO4, 15ms UPS. Shipped from our Ukraine warehouse via Nova Poshta in 1–2 days.",
     "priceLabel": "Discounted price",
-    "oldPrice": "₴37,383",
-    "newPrice": "₴22,950",
-    "discount": "−39%",
+    "oldPrice": "₴48,000",
+    "newPrice": "₴41,900",
+    "discount": "−13%",
     "cta": "Order with discount",
     "ctaSecondary": "Learn more",
     "trust1": "3500+ cycles",
     "trust2": "Money-back guarantee",
-    "trust3": "No customs fees",
+    "trust3": "1–2 day delivery",
     "h1Seo": "Portable Power Stations and Energy Independence Systems",
-    "imageAlt": "ChargeBase 2400W LiFePO4 Portable Power Station for Home"
+    "imageAlt": "ChargeBase 2500W ALLPOWERS R2500 LiFePO4 Portable Power Station for Home"
   },
   "Powers": {
     "sectionTitle": "What it powers",
@@ -51,34 +51,46 @@
   },
   "Tech": {
     "sectionTitle": "Technical advantages",
-    "sectionSubtitle": "Why LiFePO4 is the best choice for home",
+    "sectionSubtitle": "Why ALLPOWERS R2500 is the best choice for home",
     "feature1": {
-      "title": "LiFePO4 cells",
-      "description": "Don't burn, don't explode. Safe even when damaged. Last 10+ years with daily use."
+      "title": "LiFePO4 battery",
+      "description": "Won't burn, won't explode. Safe even when damaged. 3500+ cycles — over 10 years of daily use."
     },
     "feature2": {
-      "title": "Pure sine wave",
-      "description": "Critical for heating boilers, medical equipment and sensitive electronics. Won't damage expensive devices."
+      "title": "2500W pure sine wave",
+      "description": "4000W peak handles startup currents from boilers, pumps and compressors. Safe for medical and sensitive electronics."
     },
     "feature3": {
-      "title": "Fast charging",
-      "description": "From 0 to 80% in 1.5 hours from a regular outlet. Supports solar panel charging."
+      "title": "Fast charging up to 2000W",
+      "description": "Dual input AC + Solar up to 2000W — full charge in 1 hour. Solar panels up to 1000W charge the station in 2 hours."
+    },
+    "feature4": {
+      "title": "15ms UPS",
+      "description": "On grid loss the station instantly switches to battery in 15 milliseconds. Your computer won't shut down, the boiler keeps running, no data loss."
+    },
+    "feature5": {
+      "title": "Expandable up to 3× B1000",
+      "description": "Connect up to 3 additional B1000 batteries — up to 5000Wh total capacity for several days off-grid."
+    },
+    "feature6": {
+      "title": "4 charging modes",
+      "description": "AC (wall outlet), Solar (panels), Auto (auto-switch) and Double (AC+Solar simultaneously). Maximum flexibility for any conditions."
     }
   },
   "How": {
     "sectionTitle": "How we work",
-    "sectionSubtitle": "Transparent process with no hidden fees",
+    "sectionSubtitle": "Simple process — the product is already at our warehouse",
     "step1": {
       "title": "Order",
-      "description": "You place an order on the website and pay in hryvnia."
+      "description": "You place the order on the website and pay in hryvnia."
     },
     "step2": {
-      "title": "Logistics",
-      "description": "The product ships via international mail. Tracking number provided within 3–5 days."
+      "title": "Shipping",
+      "description": "We ship via Nova Poshta the same day if ordered before 14:00, otherwise the next business day."
     },
     "step3": {
       "title": "Delivery",
-      "description": "Pick up your parcel at a Nova Poshta branch. No customs fees!"
+      "description": "Pick up your parcel at a Nova Poshta branch within 1–2 days. The website price is final."
     }
   },
   "Trust": {
@@ -86,15 +98,15 @@
     "sectionSubtitle": "We stand behind our quality",
     "guarantee": {
       "title": "Money-back guarantee",
-      "description": "If the product arrives damaged — full refund or replacement."
+      "description": "If the product arrives damaged — full refund or replacement within 14 days."
     },
     "support": {
       "title": "Technical support",
-      "description": "We'll help with setup and answer all questions on Telegram or Viber."
+      "description": "We'll help with setup and answer all questions on Telegram or by email."
     },
     "reviews": {
-      "title": "Real reviews",
-      "description": "Over 8,800 sales and thousands of positive reviews on AliExpress."
+      "title": "Trusted manufacturer",
+      "description": "Over 8,800 sales and thousands of positive reviews for the ALLPOWERS brand worldwide."
     },
     "stats": {
       "sales": "Sales",
@@ -128,18 +140,39 @@
       "branchRequired": "Please enter the branch",
       "emailInvalid": "Invalid email format"
     },
-    "submit": "Order for ₴22,950",
+    "submit": "Order for ₴41,900",
     "submitting": "Submitting...",
     "successTitle": "Thank you! Order received",
     "successMessage": "We'll contact you within 30 minutes to confirm your order.",
     "submitAnother": "Place another order",
     "agreement": "By clicking the button, you agree to the personal data processing terms"
   },
+  "Contact": {
+    "sectionTitle": "Have questions?",
+    "sectionSubtitle": "Ask an expert — we'll reply within an hour",
+    "fields": {
+      "name": "Name",
+      "namePlaceholder": "How should we address you",
+      "contact": "Email or Telegram",
+      "contactPlaceholder": "your@email.com or @username",
+      "question": "Question",
+      "questionPlaceholder": "Describe your question — we'll suggest the best solution"
+    },
+    "errors": {
+      "nameRequired": "Please enter your name",
+      "contactRequired": "Please enter email or Telegram",
+      "questionRequired": "Please describe your question"
+    },
+    "submit": "Send question",
+    "submitting": "Sending...",
+    "successTitle": "Thanks for your question!",
+    "successMessage": "We'll reply within an hour through your preferred channel.",
+    "submitAnother": "Ask another question"
+  },
   "Footer": {
     "tagline": "Energy independence for your home",
     "contacts": "Contacts",
-    "phone": "+380 XX XXX XX XX",
-    "email": "info@chargebase.ua",
+    "email": "chargebase.ua@proton.me",
     "telegram": "Telegram",
     "viber": "Viber",
     "navigation": "Navigation",
@@ -147,19 +180,19 @@
     "payment": "Payment methods"
   },
   "SeoText": {
-    "title": "Home Power Station: Reliable Energy Source in Any Conditions",
-    "intro": "With unstable power supply in Ukraine, a portable power station (home generator, battery backup, UPS for boiler) has become a necessity for apartments, private houses, offices and country homes. ChargeBase offers a modern 2400W portable power station with a lithium iron phosphate LiFePO4 battery — reliable backup power for blackouts, emergency outages and to keep your gas heating boiler running. We work on a direct-supply model from China, which allows you to buy a power station at the best price without overpaying middlemen.",
-    "featuresTitle": "2400W Power for Home Appliances",
+    "title": "2500W Home Power Station: Reliable Energy in Any Conditions",
+    "intro": "With unstable power supply in Ukraine, a portable power station has become a necessity for apartments, private houses, offices and country homes. ChargeBase offers the modern ALLPOWERS R2500 portable power station — 2500W (4000W peak), 2016Wh capacity, lithium iron phosphate LiFePO4 battery with 3500+ charge cycles. 15ms UPS, four charging modes, expandable up to 3× B1000. We work from our Ukraine warehouse — Nova Poshta delivery in 1–2 days.",
+    "featuresTitle": "2500W Power for Home Appliances",
     "feature1Title": "LiFePO4 Technology",
     "feature1": "Our stations are equipped with lithium iron phosphate batteries that withstand over 3,500 charge cycles. That is over 10 years of daily use — 5x longer than standard lithium-ion batteries.",
-    "feature2Title": "Pure Sine Wave",
-    "feature2": "Critical for the safe operation of gas boilers (Vaillant, Bosch, Baxi, Protherm), refrigerators, medical devices and sensitive computer equipment. Will not damage expensive electronics.",
-    "feature3Title": "Fast Charging",
-    "feature3": "Modern controllers allow you to charge the station to 80% in just 1.5–2 hours from a regular 220V outlet. Supports solar-panel charging for complete energy independence.",
-    "feature4Title": "No Customs Fees",
-    "feature4": "Under current Ukrainian law, energy equipment (batteries and inverters) is imported at zero duty and VAT rates, making the purchase maximally cost-effective — no customs clearance at Nova Poshta.",
-    "useCasesTitle": "Who Needs a 2400W LiFePO4 Power Station",
-    "useCases": "A universal solution for those looking for a quiet, safe alternative to a petrol generator. Suitable for owners of gas heating boilers with circulation pumps, apartment dwellers needing power for fridge, Wi-Fi router, TV and lighting during scheduled outages. Also useful as a portable inverter for camping, hiking, country houses, garages and construction sites. Compatible with solar panels and serves as an affordable alternative to EcoFlow Delta, Bluetti AC200 and Anker SOLIX."
+    "feature2Title": "Pure Sine Wave 2500W (4000W peak)",
+    "feature2": "Critical for safe operation of gas boilers (Vaillant, Bosch, Baxi, Protherm), refrigerators, medical devices and sensitive electronics. The 4000W peak handles startup currents from pumps and compressors.",
+    "feature3Title": "Fast Charging and Solar Panels",
+    "feature3": "Dual input AC + Solar up to 2000W — full charge in 1 hour. Solar panels supported up to 1000W with MPPT controller — full autonomy in 2 hours of sunlight.",
+    "feature4Title": "15ms UPS and Expansion to 5+ kWh",
+    "feature4": "15ms UPS — on grid loss your equipment stays on. Compatible with 3× B1000 expansion batteries — up to 5000Wh total capacity for long outages.",
+    "useCasesTitle": "Who Needs the 2500W ALLPOWERS R2500 LiFePO4 Power Station",
+    "useCases": "A universal solution for those looking for a quiet, safe alternative to a petrol generator. Suitable for owners of gas heating boilers with circulation pumps, apartment dwellers needing power for fridge, Wi-Fi router, TV and lighting during scheduled outages. Thanks to the 15ms UPS it's safe even for servers and medical devices. Compatible with solar panels up to 1000W. An alternative to EcoFlow Delta, Bluetti AC200P and Anker SOLIX F2000 at a much better price. In stock at our Ukraine warehouse with 1–2 day shipping."
   },
   "Blog": {
     "navLink": "Blog",
@@ -168,7 +201,7 @@
     "minutesRead": "min read",
     "backToList": "All articles",
     "ctaTitle": "Ready to choose yours?",
-    "ctaSubtitle": "ChargeBase 2400W LiFePO4 — our pick for Ukrainian homes",
+    "ctaSubtitle": "ChargeBase ALLPOWERS R2500 2500W LiFePO4 — our pick for Ukrainian homes",
     "ctaButton": "View product"
   },
   "Faq": {
@@ -177,19 +210,27 @@
     "items": {
       "boiler": {
         "q": "Can I connect a gas boiler to the power station?",
-        "a": "Yes, our 2400W station with pure sine wave is compatible with all popular boilers — Vaillant, Bosch, Baxi, Protherm, Immergas. The circulation pump and boiler electronics consume around 100–150W, so a single charge will last 10–12 hours of continuous heating."
+        "a": "Yes, our 2500W station with pure sine wave is compatible with all popular boilers — Vaillant, Bosch, Baxi, Protherm, Immergas. The circulation pump and boiler electronics consume around 100–150W, so a single 2016Wh charge will last 10–12 hours of continuous heating."
       },
       "fridge": {
         "q": "How many hours can the power station run a fridge?",
-        "a": "An average household refrigerator consumes about 100–120W (factoring compressor cycles). On our 2048Wh station it will run for around 15–20 hours. Energy-efficient A++ models — up to 24 hours."
+        "a": "An average household refrigerator consumes about 100–120W (factoring compressor cycles). On our 2016Wh station it will run for around 15–20 hours. Energy-efficient A++ models — up to 24 hours."
+      },
+      "ups": {
+        "q": "What is 15ms UPS and why does it matter?",
+        "a": "When grid power fails (outage, accident) the station instantly switches to battery operation in 15 milliseconds. This is faster than sensitive equipment can detect: your computer won't reboot, no data loss, the heating boiler keeps running. Standard UPS units have 8–20ms switch-over time — our station matches professional UPS-grade performance."
+      },
+      "expansion": {
+        "q": "Can I increase the station's capacity?",
+        "a": "Yes, you can connect up to 3 additional B1000 batteries (1000Wh each) to the station. This raises total capacity to 5000Wh — enough to run a fridge for about 2 days or a heating boiler for a full day. B1000 expansion batteries are sold separately."
       },
       "delivery": {
-        "q": "How fast does the order arrive from China?",
-        "a": "Standard delivery time is 20–30 days. You receive the tracking number within 3–5 days after payment. We work with Nova Poshta — the parcel arrives at your local branch, you get an SMS and pick it up."
+        "q": "How fast does the order arrive?",
+        "a": "We ship orders from our Ukraine warehouse via Nova Poshta. If you place the order before 14:00 we ship the same day, otherwise the next business day. Delivery typically takes 1–2 days. Tracking number is sent immediately after dispatch."
       },
-      "customs": {
-        "q": "Do I need to pay customs duty on receipt?",
-        "a": "No. Under current Ukrainian law, energy equipment (battery packs and inverters) is imported at zero customs duty and VAT. There are no extra payments at Nova Poshta — the website price is final."
+      "package": {
+        "q": "What's in the box?",
+        "a": "ALLPOWERS R2500 power station (2500W, 2016Wh), AC charging cable, manual in Ukrainian. Car charging cable and solar panel are sold separately. When ordering the 'station + solar panel' bundle, the solar panel cable is included."
       },
       "damaged": {
         "q": "What if the station arrives damaged?",
@@ -197,7 +238,7 @@
       },
       "solar": {
         "q": "Can I charge the station from solar panels?",
-        "a": "Yes, the station has an MPPT controller and supports charging from solar panels up to 500W. This lets you fully charge it in 4–6 hours of clear weather — complete energy independence without a wall outlet."
+        "a": "Yes, the station has an MPPT controller and supports charging from solar panels up to 1000W. Full charge in 2 hours of clear weather — complete energy independence without a wall outlet."
       },
       "warranty": {
         "q": "What is the warranty period for the power station?",

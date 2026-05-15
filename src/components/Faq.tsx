@@ -6,7 +6,7 @@ import { ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionSection } from './MotionSection';
 
-const ITEM_IDS = ['boiler', 'fridge', 'delivery', 'customs', 'damaged', 'solar', 'warranty'] as const;
+const ITEM_IDS = ['boiler', 'fridge', 'ups', 'expansion', 'delivery', 'package', 'damaged', 'solar', 'warranty'] as const;
 
 export function Faq() {
   const t = useTranslations('Faq');
