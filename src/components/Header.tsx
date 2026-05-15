@@ -8,6 +8,7 @@ import { LangSwitcher } from './LangSwitcher';
 
 export function Header() {
   const t = useTranslations('Header');
+  const tBlog = useTranslations('Blog');
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -23,6 +24,7 @@ export function Header() {
     { href: '/#powers', label: t('powers') },
     { href: '/#how', label: t('delivery') },
     { href: '/#faq', label: t('faq') },
+    { href: '/blog', label: tBlog('navLink') },
   ];
 
   return (

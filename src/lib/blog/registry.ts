@@ -1,7 +1,8 @@
 import { article as yakVybratyArticle } from './articles/yak-vybraty-zaryadnu-stantsiyu-2026';
+import { article as vsHeneratorArticle } from './articles/zaryadna-stantsiya-vs-henerator-2026';
 import type { Article } from './types';
 
-export const ARTICLES: Article[] = [yakVybratyArticle].sort((a, b) =>
+export const ARTICLES: Article[] = [yakVybratyArticle, vsHeneratorArticle].sort((a, b) =>
   b.date.localeCompare(a.date),
 );
 
