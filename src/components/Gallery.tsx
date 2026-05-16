@@ -17,7 +17,6 @@ const items: MediaItem[] = [
   { src: '/product-6.avif', alt: 'Портативна станція 2500W у побутовому використанні' },
   { src: '/product-7.avif', alt: 'ALLPOWERS R2500 з розширювальними батареями B1000' },
   { src: '/product-8.avif', alt: 'ChargeBase ALLPOWERS R2500 — використання вдома під час відключення' },
-  { src: '/product-9.avif', alt: 'Керування ALLPOWERS R2500 через Bluetooth і Wi-Fi у мобільному застосунку' },
 ];
 
 export function Gallery() {
