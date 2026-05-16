@@ -35,12 +35,12 @@ const overlay = `
   <text x="60" y="100" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#10b981" letter-spacing="2">CHARGEBASE UA</text>
   <text x="60" y="190" font-family="Arial, sans-serif" font-size="56" font-weight="800" fill="#ffffff">Портативна</text>
   <text x="60" y="255" font-family="Arial, sans-serif" font-size="56" font-weight="800" fill="#ffffff">станція</text>
-  <text x="60" y="335" font-family="Arial, sans-serif" font-size="56" font-weight="800" fill="#10b981">2400W LiFePO4</text>
-  <text x="60" y="400" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#cbd5e1">3500+ циклів · Чиста синусоїда</text>
-  <text x="60" y="435" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#cbd5e1">Доставка в Україну без розмитнення</text>
+  <text x="60" y="335" font-family="Arial, sans-serif" font-size="46" font-weight="800" fill="#10b981">2500W · ALLPOWERS R2500</text>
+  <text x="60" y="395" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#cbd5e1">LiFePO4 2016 Вт·год · UPS 15 мс · 3500+ циклів</text>
+  <text x="60" y="430" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#cbd5e1">Зі складу в Україні · доставка 1–2 дні</text>
   <rect x="60" y="495" width="240" height="70" rx="35" fill="#10b981"/>
-  <text x="180" y="540" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#020617" text-anchor="middle">22 950 ₴</text>
-  <text x="320" y="540" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#94a3b8" text-decoration="line-through">37 383 ₴</text>
+  <text x="180" y="540" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#020617" text-anchor="middle">41 900 ₴</text>
+  <text x="320" y="540" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#94a3b8" text-decoration="line-through">48 000 ₴</text>
 </svg>
 `;
 
