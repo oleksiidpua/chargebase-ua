@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { ARTICLES } from '@/lib/blog/registry';
 
 const SITE_URL = 'https://chargebase-ua.vercel.app';
@@ -34,14 +35,22 @@ export default async function BlogIndexPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'Blog' });
+  const tCrumbs = await getTranslations({ locale, namespace: 'Breadcrumbs' });
 
   const dateLocale = locale === 'uk' ? 'uk-UA' : locale === 'ru' ? 'ru-RU' : 'en-US';
+  const localePrefix = locale === 'uk' ? '' : `/${locale}`;
 
   return (
     <>
       <Header />
       <main className="section-padding">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs
+            items={[
+              { label: tCrumbs('home'), href: `${localePrefix}/` },
+              { label: tCrumbs('blog') },
+            ]}
+          />
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
               {t('listTitle')}

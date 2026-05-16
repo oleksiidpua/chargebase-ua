@@ -6,6 +6,8 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { ArrowLeft } from 'lucide-react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { RelatedArticles } from '@/components/RelatedArticles';
 import { ARTICLES, getArticleBySlug } from '@/lib/blog/registry';
 
 const SITE_URL = 'https://chargebase-ua.vercel.app';
@@ -52,8 +54,10 @@ export default async function ArticlePage({
   if (!article) notFound();
 
   const t = await getTranslations({ locale, namespace: 'Blog' });
+  const tCrumbs = await getTranslations({ locale, namespace: 'Breadcrumbs' });
   const dateLocale = locale === 'uk' ? 'uk-UA' : locale === 'ru' ? 'ru-RU' : 'en-US';
-  const articleUrl = `${SITE_URL}${locale === 'uk' ? `/blog/${slug}` : `/${locale}/blog/${slug}`}`;
+  const localePrefix = locale === 'uk' ? '' : `/${locale}`;
+  const articleUrl = `${SITE_URL}${localePrefix}/blog/${slug}`;
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -81,6 +85,13 @@ export default async function ArticlePage({
       <Header />
       <main className="section-padding">
         <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs
+            items={[
+              { label: tCrumbs('home'), href: `${localePrefix}/` },
+              { label: tCrumbs('blog'), href: `${localePrefix}/blog` },
+              { label: article.title },
+            ]}
+          />
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-sm text-slate-400 transition hover:text-emerald-400"
@@ -125,6 +136,8 @@ export default async function ArticlePage({
           <div className="prose-article mt-10">
             <article.Content />
           </div>
+
+          <RelatedArticles currentSlug={slug} locale={locale} max={3} />
 
           <div className="mt-16 rounded-3xl border border-emerald-500/20 bg-linear-to-br from-emerald-500/10 via-slate-900/50 to-amber-500/10 p-8 text-center">
             <h2 className="text-2xl font-bold sm:text-3xl">

@@ -206,7 +206,12 @@
     "backToList": "All articles",
     "ctaTitle": "Ready to choose yours?",
     "ctaSubtitle": "ChargeBase ALLPOWERS R2500 2500W LiFePO4 — our pick for Ukrainian homes",
-    "ctaButton": "View product"
+    "ctaButton": "View product",
+    "relatedTitle": "Read also"
+  },
+  "Breadcrumbs": {
+    "home": "Home",
+    "blog": "Blog"
   },
   "Faq": {
     "sectionTitle": "Frequently Asked Questions",
@@ -228,6 +233,14 @@
         "q": "Can I increase the station's capacity?",
         "a": "Yes, you can connect up to 3 additional B1000 batteries (1000Wh each) to the station. This raises total capacity to 5000Wh — enough to run a fridge for about 2 days or a heating boiler for a full day. B1000 expansion batteries are sold separately."
       },
+      "night_sleep": {
+        "q": "Can I sleep next to the station? Is it noisy?",
+        "a": "In standby or light load (Wi-Fi, lamps, laptop) the station is almost silent — the fan does not turn on. At loads above 800W cooling activates at 30–40 dB (quiet PC fan). That's significantly quieter than a household fridge (40–55 dB) and tens of times quieter than a petrol generator (65–75 dB). Safe to place in a bedroom or nursery."
+      },
+      "winter": {
+        "q": "Does the station work in winter at sub-zero temperatures?",
+        "a": "Operating temperature range — −10°C to +45°C (charging) and −20°C to +60°C (discharging). It will work in an unheated garage or country house in winter, but capacity drops slightly in the cold (at −10°C — about 10–15% less effective capacity). For optimal performance keep it in a heated room."
+      },
       "delivery": {
         "q": "How fast does the order arrive?",
         "a": "We ship orders from our Ukraine warehouse via Nova Poshta. If you place the order before 14:00 we ship the same day, otherwise the next business day. Delivery typically takes 1–2 days. Tracking number is sent immediately after dispatch."
@@ -235,6 +248,18 @@
       "package": {
         "q": "What's in the box?",
         "a": "ALLPOWERS R2500 power station (2500W, 2016Wh), AC charging cable, manual in Ukrainian. Car charging cable and solar panel are sold separately. When ordering the 'station + solar panel' bundle, the solar panel cable is included."
+      },
+      "payment": {
+        "q": "How can I pay for the order?",
+        "a": "We accept cashless payment via LiqPay (Visa/Mastercard from any Ukrainian bank), Monobank, Privat24 and bank transfer to FOP. Cash on delivery at Nova Poshta is not available for this product due to high value and refusal risk. 100% prepayment or partial payment can be arranged individually."
+      },
+      "car_charge": {
+        "q": "Can I charge the station from a car cigarette lighter?",
+        "a": "Yes, charging via a 12V/24V car cigarette lighter is supported (cable sold separately — standard ALLPOWERS car adapter). Charging speed is about 100W — so a full cycle takes around 20 hours. Suitable for long trips, camping, or as an emergency option when there's no grid."
+      },
+      "inverter_efficiency": {
+        "q": "What is the inverter efficiency? How much energy is lost?",
+        "a": "ALLPOWERS R2500 uses a modern inverter with 90–92% efficiency (at nominal load). That means from the 2016Wh battery, about 1820–1850Wh actually reaches your devices. Standby self-consumption is about 5–8W (fan + electronics). One of the best figures in its class."
       },
       "damaged": {
         "q": "What if the station arrives damaged?",

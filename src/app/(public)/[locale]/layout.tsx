@@ -138,7 +138,7 @@ export default async function LocaleLayout({
     inLanguage,
   };
 
-  const faqIds = ['boiler', 'fridge', 'ups', 'expansion', 'app', 'delivery', 'package', 'damaged', 'solar', 'warranty'] as const;
+  const faqIds = ['boiler', 'fridge', 'ups', 'expansion', 'app', 'night_sleep', 'winter', 'inverter_efficiency', 'car_charge', 'solar', 'delivery', 'package', 'payment', 'damaged', 'warranty'] as const;
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
