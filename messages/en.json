@@ -18,7 +18,7 @@
     "badge": "From our Ukraine stock",
     "title": "Energy independence for your home",
     "titleAccent": "2500W Portable Power Station",
-    "subtitle": "ALLPOWERS R2500 — 2500W (4000W peak), 2016Wh LiFePO4, 15ms UPS. Shipped from our Ukraine warehouse via Nova Poshta in 1–2 days.",
+    "subtitle": "ALLPOWERS R2500 — 2500W (4000W peak), 2016Wh LiFePO4, 15ms UPS, Bluetooth/Wi-Fi app control. Shipped from our Ukraine warehouse via Nova Poshta in 1–2 days.",
     "priceLabel": "Discounted price",
     "oldPrice": "₴48,000",
     "newPrice": "₴41,900",
@@ -75,6 +75,10 @@
     "feature6": {
       "title": "4 charging modes",
       "description": "AC (wall outlet), Solar (panels), Auto (auto-switch) and Double (AC+Solar simultaneously). Maximum flexibility for any conditions."
+    },
+    "feature7": {
+      "title": "Bluetooth / Wi-Fi control",
+      "description": "Control the station via the ALLPOWERS mobile app: monitor charge, switch modes, get alerts. Bluetooth nearby or Wi-Fi from anywhere."
     }
   },
   "How": {
@@ -181,7 +185,7 @@
   },
   "SeoText": {
     "title": "2500W Home Power Station: Reliable Energy in Any Conditions",
-    "intro": "With unstable power supply in Ukraine, a portable power station has become a necessity for apartments, private houses, offices and country homes. ChargeBase offers the modern ALLPOWERS R2500 portable power station — 2500W (4000W peak), 2016Wh capacity, lithium iron phosphate LiFePO4 battery with 3500+ charge cycles. 15ms UPS, four charging modes, expandable up to 3× B1000. We work from our Ukraine warehouse — Nova Poshta delivery in 1–2 days.",
+    "intro": "With unstable power supply in Ukraine, a portable power station has become a necessity for apartments, private houses, offices and country homes. ChargeBase offers the modern ALLPOWERS R2500 portable power station — 2500W (4000W peak), 2016Wh capacity, lithium iron phosphate LiFePO4 battery with 3500+ charge cycles. 15ms UPS, four charging modes, expandable up to 3× B1000, Bluetooth and Wi-Fi remote control via the ALLPOWERS mobile app. We work from our Ukraine warehouse — Nova Poshta delivery in 1–2 days.",
     "featuresTitle": "2500W Power for Home Appliances",
     "feature1Title": "LiFePO4 Technology",
     "feature1": "Our stations are equipped with lithium iron phosphate batteries that withstand over 3,500 charge cycles. That is over 10 years of daily use — 5x longer than standard lithium-ion batteries.",
@@ -239,6 +243,10 @@
       "solar": {
         "q": "Can I charge the station from solar panels?",
         "a": "Yes, the station has an MPPT controller and supports charging from solar panels up to 1000W. Full charge in 2 hours of clear weather — complete energy independence without a wall outlet."
+      },
+      "app": {
+        "q": "Is there a mobile app for remote control?",
+        "a": "Yes. The ALLPOWERS R2500 supports control via Bluetooth (nearby) and Wi-Fi (from anywhere) through the official ALLPOWERS app (App Store and Google Play). The app shows battery level, real-time output/input power, lets you switch charging modes and sends critical alerts."
       },
       "warranty": {
         "q": "What is the warranty period for the power station?",

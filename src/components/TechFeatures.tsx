@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Battery, Activity, Zap, ShieldAlert, Layers, Plug } from 'lucide-react';
+import { Battery, Activity, Zap, ShieldAlert, Layers, Plug, Wifi } from 'lucide-react';
 import { MotionSection, MotionItem } from './MotionSection';
 
 export function TechFeatures() {
@@ -14,6 +14,7 @@ export function TechFeatures() {
     { id: 'feature4', icon: ShieldAlert, accent: 'from-rose-400 to-rose-600' },
     { id: 'feature5', icon: Layers, accent: 'from-violet-400 to-violet-600' },
     { id: 'feature6', icon: Plug, accent: 'from-teal-400 to-teal-600' },
+    { id: 'feature7', icon: Wifi, accent: 'from-sky-400 to-sky-600' },
   ] as const;
 
   return (
