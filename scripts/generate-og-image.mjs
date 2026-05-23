@@ -39,7 +39,7 @@ const overlay = `
   <text x="60" y="395" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#cbd5e1">LiFePO4 2016 Вт·год · UPS 15 мс · 3500+ циклів</text>
   <text x="60" y="430" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#cbd5e1">Зі складу в Україні · доставка 1–2 дні</text>
   <rect x="60" y="495" width="240" height="70" rx="35" fill="#10b981"/>
-  <text x="180" y="540" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#020617" text-anchor="middle">41 900 ₴</text>
+  <text x="180" y="540" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#020617" text-anchor="middle">39 990 ₴</text>
   <text x="320" y="540" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#94a3b8" text-decoration="line-through">48 000 ₴</text>
 </svg>
 `;

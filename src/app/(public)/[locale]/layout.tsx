@@ -113,7 +113,7 @@ export default async function LocaleLayout({
       '@type': 'Offer',
       url: canonical,
       priceCurrency: 'UAH',
-      price: '41900',
+      price: '39990',
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
     },
