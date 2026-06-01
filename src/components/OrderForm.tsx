@@ -7,6 +7,7 @@ import { z } from 'zod';
 import { useState } from 'react';
 import { CheckCircle2, AlertCircle, Send } from 'lucide-react';
 import { MotionSection } from './MotionSection';
+import { trackLead } from '@/lib/metaPixel';
 
 type FormData = {
   name: string;
@@ -60,6 +61,7 @@ export function OrderForm() {
         const body = await res.json().catch(() => ({}));
         throw new Error(body.error || 'Request failed');
       }
+      trackLead({ value: 39990, currency: 'UAH', content_name: 'ALLPOWERS R2500' });
       setSubmitted(true);
       reset();
     } catch (err) {

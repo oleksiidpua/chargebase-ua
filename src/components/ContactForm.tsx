@@ -7,6 +7,7 @@ import { z } from 'zod';
 import { useState } from 'react';
 import { CheckCircle2, AlertCircle, Send } from 'lucide-react';
 import { MotionSection } from './MotionSection';
+import { trackContact } from '@/lib/metaPixel';
 
 type FormData = {
   name: string;
@@ -44,6 +45,7 @@ export function ContactForm() {
         const body = await res.json().catch(() => ({}));
         throw new Error(body.error || 'Request failed');
       }
+      trackContact();
       setSubmitted(true);
       reset();
     } catch (err) {

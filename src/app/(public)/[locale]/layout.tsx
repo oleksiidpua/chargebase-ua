@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Clarity } from '@/components/Clarity';
+import { MetaPixel } from '@/components/MetaPixel';
 import { routing } from '@/i18n/routing';
 import '../../globals.css';
 
@@ -175,6 +176,7 @@ export default async function LocaleLayout({
 
   const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
   const clarityId = process.env.NEXT_PUBLIC_CLARITY_ID;
+  const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
   return (
     <html lang={locale} className={`${display.variable} ${mono.variable}`}>
@@ -190,6 +192,7 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
         {clarityId && <Clarity projectId={clarityId} />}
+        {metaPixelId && <MetaPixel pixelId={metaPixelId} />}
       </body>
       {gaId && <GoogleAnalytics gaId={gaId} />}
     </html>
