@@ -16,7 +16,7 @@ export function MetaPixel({ pixelId }: Props) {
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '${pixelId}');
+        fbq('init', '${pixelId}', {}, { autoConfig: true, debug: false });
         fbq('track', 'PageView');`}
       </Script>
       <noscript>

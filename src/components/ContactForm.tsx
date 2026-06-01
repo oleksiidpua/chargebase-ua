@@ -89,12 +89,14 @@ export function ContactForm() {
                 label={t('fields.name')}
                 placeholder={t('fields.namePlaceholder')}
                 error={errors.name?.message}
+                autoComplete="name"
                 registration={register('name')}
               />
               <Field
                 label={t('fields.contact')}
                 placeholder={t('fields.contactPlaceholder')}
                 error={errors.contact?.message}
+                autoComplete="email"
                 registration={register('contact')}
               />
               <div className="sm:col-span-2">
@@ -152,10 +154,11 @@ type FieldProps = {
   label: string;
   placeholder?: string;
   error?: string;
+  autoComplete?: string;
   registration: UseFormRegisterReturn;
 };
 
-function Field({ label, placeholder, error, registration }: FieldProps) {
+function Field({ label, placeholder, error, autoComplete, registration }: FieldProps) {
   return (
     <div>
       <label className="mb-2 block text-sm font-medium text-slate-300">
@@ -164,6 +167,7 @@ function Field({ label, placeholder, error, registration }: FieldProps) {
       <input
         type="text"
         placeholder={placeholder}
+        autoComplete={autoComplete}
         {...registration}
         className={`w-full rounded-xl border bg-white/5 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 transition focus:bg-white/7 focus:outline-none ${
           error

@@ -108,6 +108,7 @@ export function OrderForm() {
                 label={t('fields.name')}
                 placeholder={t('fields.namePlaceholder')}
                 error={errors.name?.message}
+                autoComplete="name"
                 registration={register('name')}
                 className="sm:col-span-2"
               />
@@ -116,6 +117,7 @@ export function OrderForm() {
                 placeholder={t('fields.phonePlaceholder')}
                 error={errors.phone?.message}
                 type="tel"
+                autoComplete="tel"
                 registration={register('phone')}
               />
               <Field
@@ -123,18 +125,21 @@ export function OrderForm() {
                 placeholder={t('fields.emailPlaceholder')}
                 error={errors.email?.message}
                 type="email"
+                autoComplete="email"
                 registration={register('email')}
               />
               <Field
                 label={t('fields.city')}
                 placeholder={t('fields.cityPlaceholder')}
                 error={errors.city?.message}
+                autoComplete="address-level2"
                 registration={register('city')}
               />
               <Field
                 label={t('fields.branch')}
                 placeholder={t('fields.branchPlaceholder')}
                 error={errors.branch?.message}
+                autoComplete="address-line1"
                 registration={register('branch')}
               />
               <div className="sm:col-span-2">
@@ -188,6 +193,7 @@ type FieldProps = {
   type?: string;
   error?: string;
   className?: string;
+  autoComplete?: string;
   registration: UseFormRegisterReturn;
 };
 
@@ -197,6 +203,7 @@ function Field({
   type = 'text',
   error,
   className,
+  autoComplete,
   registration,
 }: FieldProps) {
   return (
@@ -207,6 +214,7 @@ function Field({
       <input
         type={type}
         placeholder={placeholder}
+        autoComplete={autoComplete}
         {...registration}
         className={`w-full rounded-xl border bg-white/5 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 transition focus:bg-white/7 focus:outline-none ${
           error
