@@ -9,6 +9,7 @@ import { HowItWorks } from '@/components/HowItWorks';
 import { Trust } from '@/components/Trust';
 import { Footer } from '@/components/Footer';
 import { SeoText } from '@/components/SeoText';
+import { ViewContentTracker } from '@/components/ViewContentTracker';
 
 const Faq = dynamic(() => import('@/components/Faq').then((m) => m.Faq));
 const OrderForm = dynamic(() => import('@/components/OrderForm').then((m) => m.OrderForm));
@@ -24,6 +25,7 @@ export default async function HomePage({
 
   return (
     <>
+      <ViewContentTracker />
       <Header />
       <main>
         <Hero />

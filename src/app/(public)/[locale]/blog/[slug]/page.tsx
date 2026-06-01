@@ -8,6 +8,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { RelatedArticles } from '@/components/RelatedArticles';
+import { CheckoutButton } from '@/components/CheckoutButton';
 import { ARTICLES, getArticleBySlug } from '@/lib/blog/registry';
 
 const SITE_URL = 'https://chargebase-ua.vercel.app';
@@ -144,12 +145,13 @@ export default async function ArticlePage({
               {t('ctaTitle')}
             </h2>
             <p className="mt-3 text-slate-300">{t('ctaSubtitle')}</p>
-            <Link
+            <CheckoutButton
               href="/#order"
+              asLink
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-emerald-500 px-7 py-3.5 text-base font-semibold text-slate-950 transition hover:bg-emerald-400 hover:shadow-2xl hover:shadow-emerald-500/40"
             >
               {t('ctaButton')}
-            </Link>
+            </CheckoutButton>
           </div>
         </article>
       </main>

@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Zap, Mail, Send, MessageCircle } from 'lucide-react';
+import { trackContact } from '@/lib/metaPixel';
 
 export function Footer() {
   const t = useTranslations('Footer');
@@ -66,6 +67,7 @@ export function Footer() {
               <li>
                 <a
                   href={`mailto:${t('email')}`}
+                  onClick={() => trackContact()}
                   className="flex items-center gap-2 text-sm text-slate-400 transition hover:text-emerald-400"
                 >
                   <Mail size={14} />

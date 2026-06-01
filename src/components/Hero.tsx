@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { ArrowRight, Sparkles, Shield, Truck, BatteryCharging } from 'lucide-react';
 import Image from 'next/image';
+import { CheckoutButton } from './CheckoutButton';
 
 export function Hero() {
   const t = useTranslations('Hero');
@@ -68,7 +69,7 @@ export function Hero() {
           </div>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
+            <CheckoutButton
               href="#order"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-7 py-4 text-base font-semibold text-slate-950 transition hover:bg-emerald-400 hover:shadow-2xl hover:shadow-emerald-500/40"
             >
@@ -77,7 +78,7 @@ export function Hero() {
                 size={18}
                 className="transition group-hover:translate-x-1"
               />
-            </a>
+            </CheckoutButton>
             <a
               href="#powers"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-4 text-base font-semibold text-slate-200 transition hover:border-white/25 hover:bg-white/10"
