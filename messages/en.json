@@ -211,7 +211,57 @@
   },
   "Breadcrumbs": {
     "home": "Home",
-    "blog": "Blog"
+    "blog": "Blog",
+    "privacy": "Privacy Policy"
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "navLink": "Privacy Policy",
+    "lastUpdated": "Last updated: June 1, 2026",
+    "intro": "ChargeBase UA (\"we\", \"us\") respects your privacy and is committed to protecting your personal data. This policy explains what data we collect, how we use it, and what rights you have.",
+    "s1Title": "1. What data we collect",
+    "s1": [
+      "First and last name (when placing an order)",
+      "Contact phone number",
+      "Email (optional)",
+      "Delivery address (when placing an order)",
+      "IP address, browser and device information (automatically)"
+    ],
+    "s2Title": "2. How we use your data",
+    "s2": [
+      "To process orders and arrange delivery",
+      "To contact you regarding your order",
+      "To improve our service",
+      "For marketing purposes (with your consent)"
+    ],
+    "s3Title": "3. Meta Pixel and advertising",
+    "s3": "Our site uses Meta Pixel — an analytics tool from Meta Platforms, Inc. (Facebook, Instagram). When you visit the site and fill out forms, some data (email, phone, name) may be sent in hashed form (SHA-256) to Meta for advertising optimization, lookalike audience creation, and advertising performance analytics.",
+    "s3OptOutTitle": "You can disable personalized advertising:",
+    "s3OptOut": [
+      "In Facebook settings: Settings → Ads",
+      "In your browser: disable third-party cookies",
+      "Via dedicated extensions (e.g., Privacy Badger)"
+    ],
+    "s4Title": "4. Data sharing with third parties",
+    "s4Intro": "We share your data only with:",
+    "s4": [
+      "Delivery services (Nova Poshta) for shipping the product",
+      "Payment systems (for processing payments)",
+      "Meta Platforms (in anonymized form for advertising)"
+    ],
+    "s4Outro": "We do not sell your data to third parties.",
+    "s5Title": "5. Data retention",
+    "s5": "Order data is stored for 3 years for accounting purposes. Marketing data — until you request its deletion.",
+    "s6Title": "6. Your rights",
+    "s6Intro": "You have the right to:",
+    "s6": [
+      "Request what data we store about you",
+      "Request deletion of your data",
+      "Withdraw consent for marketing communications",
+      "File a complaint with the Ukrainian Parliament Commissioner for Human Rights"
+    ],
+    "s7Title": "7. Contact",
+    "s7": "For privacy questions write to: chargebase.ua@proton.me"
   },
   "Faq": {
     "sectionTitle": "Frequently Asked Questions",
